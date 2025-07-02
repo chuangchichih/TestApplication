@@ -8,6 +8,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.testapplication.constraintlayout.ConstraintLayoutTestActivity
+import com.example.testapplication.service.ServiceTestActivity
 import com.example.testapplication.workmanager.WorkManagerTestActivity
 
 class MainActivity : AppCompatActivity() {
@@ -30,8 +31,8 @@ class MainActivity : AppCompatActivity() {
         // Create your list of test activities
         val testActivities = listOf(
             TestActivityItem("WorkManagerTestActivity", WorkManagerTestActivity::class.java),
-            TestActivityItem("ConstraintLayoutTestActivity", ConstraintLayoutTestActivity::class.java)
-            // Add more test activities here
+            TestActivityItem("ConstraintLayoutTestActivity", ConstraintLayoutTestActivity::class.java),
+            TestActivityItem("ServiceTestActivity", ServiceTestActivity::class.java)
         )
 
         // Submit the list to the adapter
